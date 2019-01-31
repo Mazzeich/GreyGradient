@@ -133,10 +133,7 @@ namespace GreyGradient
                 {
                     if (col % 3 == 0 && col != 0) 
                         col = 0;
-
-//                    if (buf2[i, j] >= ditherMatrix[row, col] % 1)
-//                                                                                     buf2[i, j] = Math.Ceiling(buf2[i, j]);
-//                                                                                 else buf2[i, j] = Math.Floor(buf2[i, j]);
+                    
                     buf2[i, j] = Math.Floor(buf2[i, j] + ditherMatrix[row, col]);
 
                     col++;
